@@ -1,0 +1,73 @@
+:root{
+    background-color: #13141C;
+}
+
+*{
+    color: white;
+}
+
+.grouping{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    text-align: center;
+    grid-gap: 1em;
+}
+/*
+.grouping > div {
+    background: #eee;
+    padding: 1em;
+}
+.grouping > div:nth-child(odd){
+    background: #ddd;
+}
+*/
+.group1{
+    background: #04081C;
+    grid-column: 2/3;
+    
+    /*grid-template-columns: minmax(1fr, 2fr);*/
+    grid-template-rows: minmax(auto auto);
+}
+
+.group2{
+    background: #161720;
+    grid-column: 1/4;
+    grid-row: 1;
+
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: underline;
+}
+
+.group3{
+    background-image: url("https://media.istockphoto.com/photos/star-field-at-night-picture-id501655522?b=1&k=20&m=501655522&s=170667a&w=0&h=yxV0H4RLzwn_roNsSxejPhL0JAQl7YGguAeL1PtniZw=");
+    grid-column: 1;
+    grid-row: 2/20;
+    width: 300px;
+    height: auto;
+}
+
+.group4{
+    background-image: url("https://media.istockphoto.com/photos/star-field-at-night-picture-id501655522?b=1&k=20&m=501655522&s=170667a&w=0&h=yxV0H4RLzwn_roNsSxejPhL0JAQl7YGguAeL1PtniZw=");
+    grid-column: 3;
+    grid-row: 2/20;
+    width: 300px;
+    height: auto;
+    justify-self: end;
+}
+
+.group5{
+    background-color: #1F2D45;
+    grid-column: 2/3;
+    grid-row: 3/20  ;
+}
+
+.group6{
+    grid-column: 1/4;
+    grid-row: 20/33;
+    background-color: #2A214F;
+}
+
+select, option, button, input{
+    color: #161720;
+}
